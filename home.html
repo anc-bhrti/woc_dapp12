@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Anchorsol</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="../img/logo.png">
+    <script src="home.js"></script>
+</head>
+
+<body>
+<div id="video-container"></div>
+<div id="text-overlay">
+<h1 style="font-size:100px;">Anchorsol:<br></h1>
+   <p> The only place you need to visit.</p>
+
+<div class="signin">
+ <a href="../signin/signin.html"> <button class="btn btn-primary">Sign In</button></a>
+</div>
+</div>
+
+
+<!--SCROLL BUTTON-->
+
+<button id="scroll-button"><i class="bi bi-chevron-double-down"></i></button>
+
+<!--NAVIGATION BAR-->
+<div id="ctnt"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img src="../img/logo.png" alt="logo"class="navbar-brand" style="height: 7vh;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../suppliers/suppliers.html">Suppliers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="...">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="...">More</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--SEARCH BAR-->
+<style>
+  #searchInput {
+      padding: 8px;
+      width: 250px;
+      margin-left: 250px;
+  }
+</style>
+</head>
+<body>
+
+
+<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for items...">
+
+ <!--SUPPLIERS-->
+ <ul id="suppliers">
+  <div class="container" style="width: 100%;">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Dongguan Metro Clothing Co., Ltd.
+            </a>
+            </h5>
+              <p style="font-size: 10px;">Guangdong,    China       15 years      84 staff  </p>
+              <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+              <p class="tags" style="font-size: 10px;">dresses, clothes, summer, one piece, birthday dresses</p>
+              <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+              <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+              <ul>
+                <h6>Factory capabilities</h6>
+                <li>Professional inspection process</li>
+                <li>ODM service available</li>
+                <li>Full customization</li>
+                <li>Supplier assessment procedures</li>
+                <li><a href="">See all verified capabilities (11)</a></li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+            <h5 class="card-title">
+              <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                <p class="col-md-8 col-md-sm-8">    </p>
+                <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+              </div>
+            </h5>
+            <div class="photo" >
+            <img src="../img/d1.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+            <img src="../img/d2.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+            <img src="../img/d3.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+            <img src="../img/d4.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+            <img src="../img/d5.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+  <div class="container" style="width: 100%;">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Labkafe Solutions Lab Equipments Co., Ltd.
+            </a>
+            </h5>
+              <p style="font-size: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi.</p>
+              <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+              <p class="tags" style="font-size: 10px;">engineering, labs, microscope, nails, nuts and bolts, drawing kit</p>
+              
+              <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+              <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+              <ul>
+                <h6>Factory capabilities</h6>
+                <li>Professional inspection process</li>
+                <li>ODM service available</li>
+                <li>Full customization</li>
+                <li>Supplier assessment procedures</li>
+                <li><a href="">See all verified capabilities (11)</a></li>
+              </ul>
+          </div>
+          <div class="col-md-6">
+            <h5 class="card-title">
+              <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                <p class="col-md-8 col-md-sm-8">    </p>
+                <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+              </div>
+            </h5>
+            <div class="photo" >
+            <img src="../img/d7.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+            <img src="../img/d8.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+            <img src="../img/d9.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+            <img src="../img/d10.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+            <img src="../img/d11.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   
+    <div class="container" style="width: 100%;">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">SEAT-WELL ENTERPRISES CO., LTD.
+              </a>
+              </h5>
+                <p style="font-size: 10px;">Taiwan, China 2 years11 staffMain categories: OFFICE CHAIR , SIT TO STAND STOOL , KIDS STOOL
+                  Custom manufacturer
+                  Supplies Fortune 500 companies</p>
+                  <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                  <p class="tags" style="font-size: 10px;">chairs, white chairs, office chairs and decoratives, wooden</p>
+                <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                <ul>
+                  <h6>Factory capabilities</h6>
+                  <li>Professional inspection process</li>
+                  <li>ODM service available</li>
+                  <li>Full customization</li>
+                  <li>Supplier assessment procedures</li>
+                  <li><a href="">See all verified capabilities (11)</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+              <h5 class="card-title">
+                <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                  <p class="col-md-8 col-md-sm-8">    </p>
+                  <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                  <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                </div>
+              </h5>
+              <div class="photo" >
+              <img src="../img/d13.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+              <img src="../img/d14.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+              <img src="../img/d15.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+              <img src="../img/d16.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+              <img src="../img/d17.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+     
+      <div class="container" style="width: 100%;">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Zhongshan Lailux Led Lighting Co., Ltd.
+                </a>
+                </h5>
+                  <p style="font-size: 10px;">Taiwan, China 2 years11 staffMain categories: OFFICE CHAIR , SIT TO STAND STOOL , KIDS STOOL
+                    Custom manufacturer
+                    Supplies Fortune 500 companies
+                  </p>
+                  <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                  <p class="tags" style="font-size: 10px;">lights, LEDs, decoratives, fairylights</p>
+                  
+                  <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                  <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                  <ul>
+                    <h6>Factory capabilities</h6>
+                    <li>Professional inspection process</li>
+                    <li>ODM service available</li>
+                    <li>Full customization</li>
+                    <li>Supplier assessment procedures</li>
+                    <li><a href="">See all verified capabilities (11)</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6">
+                <h5 class="card-title">
+                  <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                    <p class="col-md-8 col-md-sm-8">    </p>
+                    <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                    <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                  </div>
+                </h5>
+                <div class="photo" >
+                <img src="../img/d19.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+                <img src="../img/d20.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                <img src="../img/d21.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+                <img src="../img/d22.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                <img src="../img/d23.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+       
+        <div class="container" style="width: 100%;">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Agrobase Limited Co, Ltd.
+                  </a>
+                  </h5>
+                    <p style="font-size: 10px;">Afghan based Company
+
+                      Multispecialty supplier
+                      5 yrs
+                      CN
+                      No reviews yet
+                      80 buyers</p>
+                      <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                  <p class="tags" style="font-size: 10px;">agricultural produce, grapes, tomatoes, wheat, onion</p>
+                  
+                    
+                    <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                    <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                    <ul>
+                      <h6>Factory capabilities</h6>
+                      <li>Professional inspection process</li>
+                      <li>ODM service available</li>
+                      <li>Full customization</li>
+                      <li>Supplier assessment procedures</li>
+                      <li><a href="">See all verified capabilities (11)</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="card-title">
+                    <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                      <p class="col-md-8 col-md-sm-8">    </p>
+                      <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                      <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                    </div>
+                  </h5>
+                  <div class="photo" >
+                  <img src="../img/d25.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+                  <img src="../img/d26.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                  <img src="../img/d27.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+                  <img src="../img/d28.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                  <img src="../img/d29.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          </div>
+         
+          <div class="container" style="width: 100%;">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Eternity safety Co., Ltd.
+                    </a>
+                    </h5>
+                      <p style="font-size: 10px;">Guangdong, China   15 years  84 staff </p>
+                      <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                      <p class="tags" style="font-size: 10px;">safety equipments, workers, site construction, first aid and fire extinguishers</p>
+                      <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                      <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                      <ul>
+                        <h6>Factory capabilities</h6>
+                        <li>Professional inspection process</li>
+                        <li>ODM service available</li>
+                        <li>Full customization</li>
+                        <li>Supplier assessment procedures</li>
+                        <li><a href="">See all verified capabilities (11)</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="card-title">
+                      <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                        <p class="col-md-8 col-md-sm-8">    </p>
+                        <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                        <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                      </div>
+                    </h5>
+                    <div class="photo" >
+                    <img src="../img/d31.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+                    <img src="../img/d32.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                    <img src="../img/d33.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+                    <img src="../img/d34.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                    <img src="../img/d35.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+           
+            <div class="container" style="width: 100%;">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Uncle Shaaww gardening shop
+                      </a>
+                      </h5>
+                        <p style="font-size: 10px;">Uncle Shaaww gardening shop</p>
+                        <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                        <p class="tags" style="font-size: 10px;">gardening equipments, saplings, shovel</p>
+                        <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                        <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                        <ul>
+                          <h6>Factory capabilities</h6>
+                          <li>Professional inspection process</li>
+                          <li>ODM service available</li>
+                          <li>Full customization</li>
+                          <li>Supplier assessment procedures</li>
+                          <li><a href="">See all verified capabilities (11)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="card-title">
+                        <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                          <p class="col-md-8 col-md-sm-8">    </p>
+                          <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                          <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                        </div>
+                      </h5>
+                      <div class="photo" >
+                      <img src="../img/d49.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+                      <img src="../img/d50.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                      <img src="../img/d15.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+                      <img src="../img/d52.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                      <img src="../img/d53.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+             
+              <div class="container" style="width: 100%;">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Canvas drawing Supplies Ltd. co.
+                        </a>
+                        </h5>
+
+                          <p style="font-size: 10px;">Indonesia, 19 years, super quality supplies</p>
+                          <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                          <p class="tags" style="font-size: 10px;">drawing material, watercolour, glitters, pencil colour, paper</p>
+                          
+                          <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                          <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                          <ul>
+                            <h6>Factory capabilities</h6>
+                            <li>Professional inspection process</li>
+                            <li>ODM service available</li>
+                            <li>Full customization</li>
+                            <li>Supplier assessment procedures</li>
+                            <li><a href="">See all verified capabilities (11)</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h5 class="card-title">
+                          <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                            <p class="col-md-8 col-md-sm-8">    </p>
+                            <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                            <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                          </div>
+                        </h5>
+                        <div class="photo" >
+                        <img src="../img/d37.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+                        <img src="../img/d38.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                        <img src="../img/d39.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+                        <img src="../img/d40.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                        <img src="../img/d41.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+               
+                <div class="container" style="width: 100%;">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h5 class="card-title " style="font-size: 15px;"><a href="../signin/signin.html">Level shoes Ltd. co.
+                          </a>
+                          </h5>
+            
+                            <p style="font-size: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, velit.</p>
+                            <p style="font-size: 10px; margin-bottom: 2px;">Main Products:</p>
+                          <p class="tags" style="font-size: 10px;">men's shoe, sport shoes, formals-brown and black leather shoe</p>
+                            
+                            <h6 class="display-6" style="font-size: 18px">Rating and Reviews</h6>
+                            <p style="font-size: 10px;">4.9/5 (10+reviews)</p>
+                            <ul>
+                              <h6>Factory capabilities</h6>
+                              <li>Professional inspection process</li>
+                              <li>ODM service available</li>
+                              <li>Full customization</li>
+                              <li>Supplier assessment procedures</li>
+                              <li><a href="">See all verified capabilities (11)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <h5 class="card-title">
+                            <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic example">
+                              <p class="col-md-8 col-md-sm-8">    </p>
+                              <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Chat Now</button>
+                              <button type="button" class="btn btn-primary col-md-2 col-md-sm-2">Contact us</button>
+                            </div>
+                          </h5>
+                          <div class="photo" >
+                          <img src="../img/d55.jpg" alt=""height=200px class="col-md-3" style="float: left; margin: 10px;">
+                          <img src="../img/d56.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                          <img src="../img/d57.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;" >
+                          <img src="../img/d58.jpg" alt=""height=80px class="col-md-3"style="float: left; margin: 22px;">
+                          <img src="../img/d59.jpg" alt=""height=80px class="col-md-3" style="float: left; margin: 22px;">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-3">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </ul>
+        <!--How blockchain faciltates the supply chain?-->
+        <p class="display-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <h2 class="display-5">How blockchain faciltates the supply chain?</h2>
+        <div class="container-lg">
+          <div class="row my-5 align-text-center justify-content-center">
+
+            <div class="col-8 col-lg-4 col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="../img/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="https://www.mdpi.com/2079-8954/11/6/299#:~:text=The%20inherent%20advantages%20of%20blockchain,in%20facilitating%20supply%20chain%20collaboration.">
+                    The Effect of Blockchain Technology on Supply Chain Collaboration: A Case Study of Lenovo
+                  </a>
+                </div>
+                </div>
+              </div>
+
+            <div class="col-8 col-lg-4 col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="../img/img2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="https://hbr.org/2020/05/building-a-transparent-supply-chain">
+                    Building a Transparent Supply Chain <br>
+                    Blockchain can enhance trust, efficiency, and speed. by Vishal Gaur and Abhinav Gaiha <br>
+                    From the Magazine (May–June 2020)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="../img/img3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0360835221000346">
+                    Blockchain-based framework for supply chain traceability: A case example of textile and clothing industry
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="../img/img4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="https://link.springer.com/article/10.1007/s10479-022-04868-0">
+                    Blockchain as the “trust-building machine” for supply chain management <br>
+                      Original Research <br>
+                      Open access <br>
+                      Published: 05 August 2022 <br>
+                      Volume 327, pages 49–88, (2023)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="../img/img5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="https://www.paltron.com/insights-en/the-role-of-blockchain-in-supply-chain-management-scm">
+                    MARCH 16, 2023
+                    The Role of Blockchain in Supply Chain Management (SCM)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <h2 class="display-5">The future is closer than it seems.</h2>
+        <p class="display-9">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+     </div>
+
+    <!--REVIEWS-->
+
+    <section id="reviews" class="bg-light-mt-5">
+      <div class="container-lg">
+      <h1 class="display-5">What our customer say?</h1>
+      <div class="row my-5 align-items-center justify-content-center">
+        <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center py-4">
+          <h5 class="card-title">John</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Awesome</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center py-4">
+          <h5 class="card-title">John</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Awesome</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center py-4">
+          <h5 class="card-title">John</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Awesome</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center py-4">
+          <h5 class="card-title">John</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Awesome</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+      </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body text-center py-4">
+          <h5 class="card-title">John</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Awesome</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+<!--Contact Us-->
+<div class="row justify-content-center">
+  <div class="col-5 border">
+<div id="contactUs" class="contactUs  justify-content-center">
+    <h2>Cotact Us</h2>
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">phone address</label>
+        <input type="phone" class="form-control" id="phone" aria-describedby="phoneHelp">
+      </div>
+      <div class="mb-3">
+        <label for="query" class="form-label">Query</label>
+        <input type="text" class="form-control" id="query" aria-discribedly="queryHelp">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Turn On Notifications</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</div>
+</div>
+
+<!--Footer-->
+<div id="footer" class="footer">
+    <ul>
+        <li><h3>Learn Technology</h3></li>
+        <li><a href="link1" target="_blank">1</a></li>
+        <li><a href="link2" target="_blank">2</a></li>
+        <li><a href="link3" target="_blank">3</a></li>
+        <li><a href="link4" target="_blank">4</a></li>
+        <li><a href="link5" target="_blank">5</a></li>
+        <li><a href="link6" target="_blank">6</a></li>
+        <li><a href="link7" target="_blank">7</a></li>
+        <li><a href="link8" target="_blank">8</a></li>
+    </ul>
+
+    <ul>
+        
+        <li><h3>Terms and Conditions</h3></li>
+        <li><a href="t&c1" target="_blank">1</a></li>
+        <li><a href="t&c2" target="_blank">2</a></li>
+        <li><a href="t&c3" target="_blank">3</a></li>
+        <li><a href="t&c4" target="_blank">4</a></li>
+    
+    </ul>
+
+<ul>
+    <li>instagram logo</li>
+    <li>discord logo</li>
+    <li>linkedin logo</li>
+    <li>facebook logo</li>
+    <li>forum</li>
+</ul>
+<p>Terms and Conditions Applied.</p>
+    <p>Last Updated:</p>
+</div>
+</body>
+</html>

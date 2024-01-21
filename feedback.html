@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Your Orders</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .star-rating {
+            font-size: 24px;
+            display: inline-block;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .star-rating:hover,
+        .star-rating:hover ~ .star-rating,
+        .star-rating.checked {
+            color: gold;
+        }
+
+        #feedback {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h5>Your Account > Leave Seller Feedback</h5>
+        
+        <div class="card" style="width: 90%;">
+            <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-md-3">
+                       <img src="../img/d20.jpg" alt="" style="height: 100px;">
+                    </div>
+                    <div class="col-md-9">
+                      <p style="font-size: large;">Zhongshan Lailux Led Lighting Co., Ltd.</p>
+                     
+                        <p class="fw-lighter" style="font-size: smaller;">Cafe beautiful lamp, ceiling lamps, customizable design and colours</p>
+                    </div>
+                   
+                </div>
+
+                <div class="card-text">
+                    <div class="container">
+                        <textarea
+                            id="textarea"
+                            class="form-control"
+                            placeholder="Please write your text here..."
+                            maxlength="400"
+                            style="height: 150px;"
+                        ></textarea>
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <p>
+                                    Total Characters:
+                                    <span class="total-counter" id="total-counter"></span>
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Remaining:
+                                    <span class="remaining-counter" id="remaining-counter"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="feedback" class="mt-3 row mb-2">
+                  <div class="col-md-10">
+                    <p>Rate your experience:</p>
+                    <span class="star-rating" onclick="setRating(1)" id="star-1">★</span>
+                    <span class="star-rating" onclick="setRating(2)" id="star-2">★</span>
+                    <span class="star-rating" onclick="setRating(3)" id="star-3">★</span>
+                    <span class="star-rating" onclick="setRating(4)" id="star-4">★</span>
+                    <span class="star-rating" onclick="setRating(5)" id="star-5">★</span>
+                  </div>
+                  <div class="col-md-2">
+                    <button class="btn btn-primary" onclick="refresh()" type="button">Submit</button>
+                  </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        const textareaEl = document.getElementById("textarea");
+        const totalCounterEl = document.getElementById("total-counter");
+        const remainingCounterEl = document.getElementById("remaining-counter");
+
+        textareaEl.addEventListener("input", updateCounter);
+
+        function updateCounter() {
+            totalCounterEl.innerText = textareaEl.value.length;
+            remainingCounterEl.innerText =
+                textareaEl.getAttribute("maxlength") - textareaEl.value.length;
+        }
+
+        function setRating(rating) {
+            // Your logic to handle the selected rating
+            console.log("Selected Rating:", rating);
+
+            // Update the stars' appearance based on the selected rating
+            for (let i = 1; i <= 5; i++) {
+                const star = document.getElementById(`star-${i}`);
+                if (i <= rating) {
+                    star.classList.add('checked');
+                } else {
+                    star.classList.remove('checked');
+                }
+            }
+        }
+
+        function refresh(){
+        location.reload();
+        }
+    </script>
+</body>
+</html>
